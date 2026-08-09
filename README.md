@@ -6,7 +6,7 @@ Glorytun package for OpenWrt
 
 Add this line in your `feeds.conf.default`:
 
-    src-git glorytun https://github.com/angt/glorytun-openwrt.git
+    src-git glorytun https://github.com/vriksterr/glorytun-openwrt
 
 Update and install your feeds:
 
