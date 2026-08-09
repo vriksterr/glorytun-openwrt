@@ -21,7 +21,7 @@ define Package/glorytun
 	CATEGORY:=Network
 	DEPENDS:=+kmod-tun +libsodium +librt
 	TITLE:=Glorytun
-	URL:=https://github.com/vriksterr/glorytun.git
+	URL:=https://github.com/vriksterr/glorytun
 	SUBMENU:=VPN
 endef
 
@@ -46,4 +46,4 @@ define Package/glorytun/install
 	touch $(1)/etc/config/glorytun
 endef
 
-$(eval $(call BuildPackage,glorytun-vrxtr))
+$(eval $(call BuildPackage,glorytun))
