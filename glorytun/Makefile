@@ -1,11 +1,11 @@
 include $(TOPDIR)/rules.mk
 
-PKG_NAME:=glorytun-vrxtr
+PKG_NAME:=glorytun
 PKG_VERSION:=1.0
 PKG_RELEASE:=1
 
 PKG_SOURCE_PROTO:=git
-PKG_SOURCE_URL:=https://github.com/akshat1050/glorytun-vrxtr.git
+PKG_SOURCE_URL:=https://github.com/vriksterr/glorytun
 PKG_SOURCE_VERSION:=master
 # for reproducible builds, pin a commit instead:
 # PKG_SOURCE_VERSION:=<full 40-char commit sha>
@@ -16,16 +16,16 @@ PKG_BUILD_PARALLEL:=1
 
 include $(INCLUDE_DIR)/package.mk
 
-define Package/glorytun-vrxtr
+define Package/glorytun
 	SECTION:=net
 	CATEGORY:=Network
 	DEPENDS:=+kmod-tun +libsodium +librt
-	TITLE:=Glorytun VRXTR
-	URL:=https://github.com/akshat1050/glorytun-vrxtr
+	TITLE:=Glorytun
+	URL:=https://github.com/vriksterr/glorytun
 	SUBMENU:=VPN
 endef
 
-define Package/glorytun-vrxtr/description
+define Package/glorytun/description
 	Glorytun is a vpn designed to improve your internet connectivity:
 	- Fast and highly secure.
 	- Multipath and active failover.
@@ -33,11 +33,11 @@ define Package/glorytun-vrxtr/description
 	- Path MTU discovery without ICMP.
 endef
 
-define Package/glorytun-vrxtr/conffiles
+define Package/glorytun/conffiles
 /etc/config/glorytun
 endef
 
-define Package/glorytun-vrxtr/install
+define Package/glorytun/install
 	$(INSTALL_DIR) $(1)/usr/sbin
 	$(INSTALL_BIN) $(PKG_BUILD_DIR)/glorytun $(1)/usr/sbin
 	$(INSTALL_DIR) $(1)/etc/init.d
