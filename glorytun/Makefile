@@ -5,7 +5,7 @@ PKG_VERSION:=1.0
 PKG_RELEASE:=1
 
 PKG_SOURCE_PROTO:=git
-PKG_SOURCE_URL:=https://github.com/vriksterr/glorytun
+PKG_SOURCE_URL:=https://github.com/vriksterr/glorytun.git
 PKG_SOURCE_VERSION:=master
 # for reproducible builds, pin a commit instead:
 # PKG_SOURCE_VERSION:=<full 40-char commit sha>
@@ -21,7 +21,7 @@ define Package/glorytun
 	CATEGORY:=Network
 	DEPENDS:=+kmod-tun +libsodium +librt
 	TITLE:=Glorytun
-	URL:=https://github.com/vriksterr/glorytun
+	URL:=https://github.com/vriksterr/glorytun.git
 	SUBMENU:=VPN
 endef
 
