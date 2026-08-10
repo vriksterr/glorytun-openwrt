@@ -6,7 +6,7 @@ PKG_RELEASE:=1
 
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_URL:=https://github.com/vriksterr/glorytun.git
-PKG_SOURCE_VERSION:=master
+PKG_SOURCE_VERSION:=main
 # for reproducible builds, pin a commit instead:
 # PKG_SOURCE_VERSION:=<full 40-char commit sha>
 PKG_MIRROR_HASH:=skip
